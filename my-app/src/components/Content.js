@@ -27,7 +27,7 @@ export class Content extends Component {
     }
     handleChange = event => {
         this.setState({
-            posts: savedPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
+            posts: savedPosts.filter(post => post.name.toLowerCase().includes(event.target.value.toLowerCase()))
         })
     }
     render() {
